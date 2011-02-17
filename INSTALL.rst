@@ -1,18 +1,15 @@
 
-============
-INSTALLATION
-============
 
-
-Install requirement
-===================
+1. Install requirement
+======================
     
     > pip install -r requirements.txt
 
 
-Install
-=======
+2. Install
+==========
 
     > python setup.py install
+
 
 
