@@ -7,3 +7,6 @@ test.db
 settings_local.py
 env
 distribute-*
+Simu_Prefix*
+build*
+dist*
