@@ -1,2 +1,4 @@
 Django==1.2.5
 MySQL-python==1.2.3
+django-reusableapps==0.1.1
+simu-common==0.1

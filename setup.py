@@ -23,7 +23,7 @@ for dirpath, dirnames, filenames in os.walk('prefix_country'):
             data_files.append(os.path.join(prefix, f))
 
 setup(
-    name='Simu-Prefix-Country',
+    name='simu-prefix-country',
     version='0.1',
     description='Application providing Prefixes and Countries code',
     author='Belaid Arezqui',
