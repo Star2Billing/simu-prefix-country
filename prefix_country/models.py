@@ -72,4 +72,3 @@ class Prefix(Model):
         else:
             return self.country_id.countryname
     country_name.short_description = _("Country Name")
-

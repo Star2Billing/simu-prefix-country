@@ -27,4 +27,3 @@ class PrefixAdmin(admin.ModelAdmin):
         super(PrefixAdmin, self).__init__(*args, **kwargs)
         #self.list_display_links = (None, )
 admin.site.register(Prefix, PrefixAdmin)
-

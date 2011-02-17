@@ -1,7 +1,5 @@
 import os
-import djcelery
 import reusableapps
-djcelery.setup_loader()
 
 # Django settings for testsms project.
 APPLICATION_DIR = os.path.dirname(globals()['__file__'])
@@ -83,9 +81,7 @@ TEMPLATE_LOADERS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    #'django.middleware.cache.UpdateCacheMiddleware',
     'django.middleware.common.CommonMiddleware',
-    #'django.middleware.cache.FetchFromCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -126,16 +122,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
-    'django.contrib.markup',
-    'provider',
-    'sms',
-    'sms_billing',
-    'sms_report',
-    'api',
     'common',
-    'djcelery',
-    'django_extensions',
-    'dateutil',
+    'prefix_country',
     #'debug_toolbar',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
