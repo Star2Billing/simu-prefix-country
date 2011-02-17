@@ -2,8 +2,7 @@ from django.contrib import admin
 from django.conf.urls.defaults import *
 from django.utils.translation import ugettext as _
 from django.db.models import *
-from provider.models import *
-from provider.forms import *
+from prefix_country.models import *
 
 
 class CountryAdmin(admin.ModelAdmin):

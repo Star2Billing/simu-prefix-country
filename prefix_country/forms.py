@@ -3,8 +3,7 @@ from django.forms import ModelForm
 from django.contrib import *
 from django.contrib.admin.widgets import *
 from django.utils.translation import ugettext_lazy as _
-from provider.models import *
-from sms_billing.function_def import *
+from prefix_country.models import *
 from datetime import *
 # place form definition here
 

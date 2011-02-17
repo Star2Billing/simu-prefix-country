@@ -1,6 +1,5 @@
 from django.db import models
 from django.utils.translation import ugettext as _
-from sms.models import Gateway
 from datetime import *
 from common.intermediate_model_base_class import Model
 
@@ -26,8 +25,8 @@ class Country(Model):
                          help_text=_("Enter Country Name. e.g. United States"))
 
     class Meta:
-        db_table = 'provider_country'
-        app_label = _('provider')
+        db_table = 'simu_country'
+        app_label = _('prefix_country')
         verbose_name = _("Country")
         verbose_name_plural = _("Countries")
 
@@ -55,8 +54,8 @@ class Prefix(Model):
                                       help_text=_("Select Prefix Type"))
 
     class Meta:
-        db_table = 'provider_prefix'
-        app_label = _('provider')
+        db_table = 'simu_prefix'
+        app_label = _('prefix_country')
         verbose_name = _("Prefix")
         verbose_name_plural = _("Prefixes")
         ordering = ["prefix"]
