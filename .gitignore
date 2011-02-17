@@ -1,0 +1,9 @@
+*.pyc
+*dilla*
+*.db
+*nbproject*
+*devserver*
+test.db
+settings_local.py
+env
+distribute-*
