@@ -31,5 +31,5 @@ setup(
     packages=packages,
     package_dir={'prefix_country': 'prefix_country'},
     package_data={'prefix_country': data_files},
-    entry_points={'django.apps': 'provider = provider:Country'},
+    entry_points={'django.apps': 'prefix_country = prefix_country'},
 )
