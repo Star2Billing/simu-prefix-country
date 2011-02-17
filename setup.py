@@ -23,25 +23,13 @@ for dirpath, dirnames, filenames in os.walk('dummyapp'):
             data_files.append(os.path.join(prefix, f))
 
 setup(
-    name='Country',
+    name='Simu-Prefix-Country',
     version='0.1',
-    description='Here be dragons.',
-    author='Dummy van Dum',
-    author_email='dummy@dummy.com',
+    description='Application providing Prefixes and Countries code',
+    author='Belaid Arezqui',
+    author_email='areski@gmail.com',
     packages=packages,
-    package_dir={'dummyapp': 'dummyapp'},
-    package_data={'dummyapp': data_files},
+    package_dir={'prefix_country': 'prefix_country'},
+    package_data={'prefix_country': data_files},
     entry_points={'django.apps': 'provider = provider:Country'},
-)
-
-setup(
-    name='Prefix',
-    version='0.1',
-    description='Here be dragons.',
-    author='Dummy van Dum',
-    author_email='dummy@dummy.com',
-    packages=packages,
-    package_dir={'dummyapp': 'dummyapp'},
-    package_data={'dummyapp': data_files},
-    entry_points={'django.apps': 'provider = provider:Prefix'},
 )
