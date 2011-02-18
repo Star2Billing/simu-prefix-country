@@ -28,8 +28,9 @@ setup(
     description='Application providing Prefixes and Countries code',
     author='Belaid Arezqui',
     author_email='areski@gmail.com',
-    packages=packages,
+    packages=['prefix_country'],
     package_dir={'prefix_country': 'prefix_country'},
     package_data={'prefix_country': data_files},
+    zip_safe = False,
     entry_points={'django.apps': 'prefix_country = prefix_country'},
 )
